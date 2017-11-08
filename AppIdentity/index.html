@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h2>Asp Net Identity 2</h2>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Pruebas de Identity</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="form-group" id="frmRegistro">
+                            <div class="col-form-label">
+                                Registro
+                            </div>
+                            <div class="row col-md-8">
+                                <div class="col-md-8 form-group">
+                                    <label class="col-form-label">UserName</label>
+                                    <input id="txtNombre" type="text" required />
+                                </div>
+                                <div class="col-md-8 form-group">
+                                    <label class="col-form-label">Email</label>
+                                    <input id="txtEmail" type="email" required />
+                                </div>
+                                <div class="col-md-8 form-group">
+                                    <label class="col-form-label">Pass</label>
+                                    <input id="txtPass" type="password" required />
+                                </div>
+                                <div class="col-md-8 form-group">
+                                    <label class="col-form-label">confirm Pass</label>
+                                    <input id="txtConfPass" type="password" required />
+                                </div>
+                                <button class="btn btn-primary" type="submit" id="btnNuevo">Registrar Usuario</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="form-group" id="frmLogin">
+                            <div class="col-form-label">
+                                Login
+                            </div>
+                            <div class="row col-md-7">
+                                <div class="col-md-8 form-group">
+                                    <label class="col-form-label">UserName</label>
+                                    <input id="txtNombreL" type="text" required />
+                                </div>
+
+                                <div class="col-md-8 form-group">
+                                    <label class="col-form-label">Pass</label>
+                                    <input id="txtPassL" type="password" required />
+                                </div>                                
+                            </div>
+                            <button class="btn btn-primary" type="submit" id="btnLogin">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container bg-dark text-white" id="divResult">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
+    <script src="Scripts/umd/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
